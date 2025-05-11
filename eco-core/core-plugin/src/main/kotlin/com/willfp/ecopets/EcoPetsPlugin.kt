@@ -11,8 +11,10 @@ import com.willfp.ecopets.libreforge.ConditionHasPetLevel
 import com.willfp.ecopets.libreforge.EffectGivePetXp
 import com.willfp.ecopets.libreforge.EffectPetXpMultiplier
 import com.willfp.ecopets.libreforge.FilterPet
+import com.willfp.ecopets.libreforge.TriggerForestBlockBreak
 import com.willfp.ecopets.libreforge.TriggerGainPetXp
 import com.willfp.ecopets.libreforge.TriggerLevelUpPet
+import com.willfp.ecopets.libreforge.TriggerMirageBlockBreak
 import com.willfp.ecopets.pets.DiscoverRecipeListener
 import com.willfp.ecopets.pets.PetDisplay
 import com.willfp.ecopets.pets.PetLevelListener
@@ -56,6 +58,8 @@ class EcoPetsPlugin : LibreforgePlugin() {
         Effects.register(EffectGivePetXp)
         Triggers.register(TriggerGainPetXp)
         Triggers.register(TriggerLevelUpPet)
+        Triggers.register(TriggerForestBlockBreak)
+        Triggers.register(TriggerMirageBlockBreak)
         Filters.register(FilterPet)
 
         registerSpecificHolderProvider<Player> {
